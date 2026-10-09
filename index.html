@@ -1255,6 +1255,266 @@
 
 
 
+
+        /* =====================================
+           LOCATION-LOCAL NIGHT THEMES
+           Uses Open-Meteo's is_day value for the searched city.
+        ===================================== */
+
+        body.night.sunny {
+            background: linear-gradient(135deg, #101a33, #1c2945, #263653);
+            color: #f4f7ff;
+        }
+
+        body.night.cloudy {
+            background: linear-gradient(135deg, #263347, #354357, #202b3d);
+            color: #f4f7ff;
+        }
+
+        body.night.foggy {
+            background: linear-gradient(135deg, #303944, #414b57, #252e39);
+            color: #f4f7ff;
+        }
+
+        body.night.rainy {
+            background: linear-gradient(135deg, #172333, #253447, #101a29);
+            color: #f4f7ff;
+        }
+
+        body.night.snowy {
+            background: linear-gradient(135deg, #26364b, #34465d, #1c2b40);
+            color: #f4f7ff;
+        }
+
+        body.night.stormy {
+            background: linear-gradient(135deg, #111722, #202a3b, #0b111b);
+            color: #f4f7ff;
+        }
+
+        body.night #weatherEffects {
+            opacity: 1;
+        }
+
+        body.night .cloud {
+            background: rgba(25, 35, 51, 0.58);
+            filter: blur(5px);
+        }
+
+        body.night.cloudy .cloud-one,
+        body.night.cloudy .cloud-two {
+            opacity: 0.82;
+            animation: cloudMove 35s linear infinite;
+        }
+
+        body.night.rainy .cloud-one,
+        body.night.stormy .cloud-one {
+            background: rgba(18, 27, 41, 0.78);
+            opacity: 0.96;
+        }
+
+        body.night.rainy .cloud-two,
+        body.night.stormy .cloud-two {
+            background: rgba(32, 43, 59, 0.78);
+            opacity: 0.88;
+        }
+
+        /* Translucent glass dashboard for night mode */
+        body.night .hero-card,
+        body.night .stat-card,
+        body.night .advice-card,
+        body.night .summary-card {
+            background: rgba(23, 38, 66, 0.58);
+            color: #f5f7ff;
+            border: 1px solid rgba(220, 232, 255, 0.25);
+            box-shadow:
+                0 18px 48px rgba(0, 0, 0, 0.16),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        body.night .header h1 {
+            color: #f4f7ff;
+        }
+
+        body.night .subtitle {
+            color: rgba(239, 244, 255, 0.78);
+        }
+
+        body.night .hero-card h2,
+        body.night .hero-card .temperature,
+        body.night .stat-card h3,
+        body.night .advice-card h3,
+        body.night .summary-card p:last-child {
+            color: #f5f7ff;
+        }
+
+        body.night .hero-card p,
+        body.night .condition,
+        body.night .stat-card p {
+            color: rgba(226, 234, 249, 0.78);
+        }
+
+        body.night .card-label {
+            color: #91a4ff;
+        }
+
+        body.night .stat-icon,
+        body.night .advice-icon {
+            background: rgba(240, 245, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        body.night .search-form input {
+            background: rgba(245, 248, 255, 0.88);
+            border-color: rgba(255, 255, 255, 0.32);
+        }
+
+        body.night .sound-button,
+        body.night .test-lab-trigger,
+        body.night .connect-link {
+            background: rgba(20, 31, 52, 0.76);
+            border-color: rgba(230, 238, 255, 0.42);
+            color: #f5f7ff;
+        }
+
+        body.night .connect-text {
+            color: #f5f7ff;
+        }
+
+        body.night .test-lab-panel {
+            background: rgba(17, 29, 50, 0.72);
+            border-color: rgba(220, 232, 255, 0.28);
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+        }
+
+        body.night .test-lab-title,
+        body.night .test-lab-description,
+        body.night .test-status {
+            color: #eef3ff;
+        }
+
+        body.night .test-weather-button {
+            background: rgba(225, 235, 255, 0.10);
+            color: #f4f7ff;
+            border-color: rgba(225, 235, 255, 0.22);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        body.night .test-weather-button:hover {
+            background: rgba(225, 235, 255, 0.16);
+            border-color: rgba(160, 180, 255, 0.65);
+        }
+
+        body.night .test-weather-button.active {
+            background: rgba(105, 124, 235, 0.24);
+            border-color: #8b9aff;
+            box-shadow: 0 0 0 3px rgba(105, 124, 235, 0.18);
+        }
+
+        body.night .test-weather-action {
+            color: rgba(225, 235, 255, 0.68);
+        }
+
+        body.night .test-lab-close {
+            background: rgba(225, 235, 255, 0.12);
+            color: #f4f7ff;
+        }
+
+        body.night .test-stop-button {
+            background: rgba(225, 235, 255, 0.16);
+            border: 1px solid rgba(225, 235, 255, 0.18);
+        }
+
+        body.night .raindrop {
+            background: rgba(220, 232, 255, 0.72);
+            box-shadow: 0 0 4px rgba(185, 210, 255, 0.18);
+        }
+
+        body.night.stormy .lightning-flash {
+            background: rgba(210, 225, 255, 0.95);
+        }
+
+
+        /* =====================================
+           NIGHT SKY STARS
+           No trees, water, or decorative scenery.
+        ===================================== */
+
+        #starfield {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            pointer-events: none;
+            background-image:
+                radial-gradient(1.5px 1.5px at 7% 17%, rgba(255,255,255,.95) 50%, transparent 100%),
+                radial-gradient(1px 1px at 18% 38%, rgba(255,255,255,.8) 50%, transparent 100%),
+                radial-gradient(2px 2px at 28% 12%, rgba(255,255,255,.95) 50%, transparent 100%),
+                radial-gradient(1px 1px at 39% 28%, rgba(255,255,255,.8) 50%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 51% 10%, rgba(255,255,255,.9) 50%, transparent 100%),
+                radial-gradient(1px 1px at 61% 34%, rgba(255,255,255,.75) 50%, transparent 100%),
+                radial-gradient(2px 2px at 72% 18%, rgba(255,255,255,.95) 50%, transparent 100%),
+                radial-gradient(1px 1px at 83% 42%, rgba(255,255,255,.8) 50%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 94% 13%, rgba(255,255,255,.9) 50%, transparent 100%),
+                radial-gradient(1px 1px at 12% 67%, rgba(255,255,255,.75) 50%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 33% 79%, rgba(255,255,255,.8) 50%, transparent 100%),
+                radial-gradient(1px 1px at 57% 72%, rgba(255,255,255,.8) 50%, transparent 100%),
+                radial-gradient(1.5px 1.5px at 77% 83%, rgba(255,255,255,.85) 50%, transparent 100%),
+                radial-gradient(1px 1px at 90% 63%, rgba(255,255,255,.75) 50%, transparent 100%);
+            animation: starTwinkle 4s ease-in-out infinite alternate;
+        }
+
+        body.night.sunny #starfield {
+            opacity: 1;
+        }
+
+        body.night.sunny .cloud {
+            opacity: 0 !important;
+            animation: none !important;
+        }
+
+        @keyframes starTwinkle {
+            from { filter: brightness(.75); }
+            to { filter: brightness(1.35); }
+        }
+
+        /* Rain should feel overcast even during daytime. */
+        body.rainy {
+            background: linear-gradient(135deg, #596b80, #75869a, #3d4d61);
+        }
+
+        body.heavy-rain {
+            background: linear-gradient(135deg, #273548, #3b4b60, #1b2635);
+        }
+
+        body.stormy {
+            background: linear-gradient(135deg, #202a3b, #303c50, #141b27);
+        }
+
+        body.night.rainy {
+            background: linear-gradient(135deg, #111b2a, #1b293b, #0a121e);
+        }
+
+        body.night.heavy-rain {
+            background: linear-gradient(135deg, #080f1a, #151f2e, #060b12);
+        }
+
+        body.heavy-rain .cloud-one,
+        body.heavy-rain .cloud-two {
+            background: rgba(15, 23, 35, .88);
+            filter: blur(7px);
+            opacity: .98;
+        }
+
+        body.heavy-rain .raindrop {
+            height: 30px;
+            width: 2.5px;
+            background: rgba(220, 232, 255, .82);
+        }
+
         /* =====================================
            SOUND CONTROL
         ===================================== */
@@ -1711,6 +1971,352 @@
             }
         }
 
+    
+
+        /* Universal daytime glass cards: subtle transparency across every weather theme */
+        body:not(.night):not(.rainy):not(.heavy-rain):not(.stormy) .hero-card,
+        body:not(.night):not(.rainy):not(.heavy-rain):not(.stormy) .stat-card,
+        body:not(.night):not(.rainy):not(.heavy-rain):not(.stormy) .advice-card,
+        body:not(.night):not(.rainy):not(.heavy-rain):not(.stormy) .summary-card {
+            background: rgba(255, 255, 255, 0.42);
+            border: 1px solid rgba(255, 255, 255, 0.58);
+            box-shadow: 0 18px 48px rgba(35, 48, 72, 0.10),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.48);
+            backdrop-filter: blur(18px) saturate(135%);
+            -webkit-backdrop-filter: blur(18px) saturate(135%);
+        }
+
+        body:not(.night):not(.rainy):not(.heavy-rain):not(.stormy) .stat-icon,
+        body:not(.night):not(.rainy):not(.heavy-rain):not(.stormy) .advice-icon {
+            background: rgba(255, 255, 255, 0.42);
+            border: 1px solid rgba(255, 255, 255, 0.52);
+        }
+
+        /* Keep glass readable over the darker rain and thunderstorm scenes */
+        body:not(.night).rainy .hero-card,
+        body:not(.night).rainy .stat-card,
+        body:not(.night).rainy .advice-card,
+        body:not(.night).rainy .summary-card,
+        body:not(.night).heavy-rain .hero-card,
+        body:not(.night).heavy-rain .stat-card,
+        body:not(.night).heavy-rain .advice-card,
+        body:not(.night).heavy-rain .summary-card,
+        body:not(.night).stormy .hero-card,
+        body:not(.night).stormy .stat-card,
+        body:not(.night).stormy .advice-card,
+        body:not(.night).stormy .summary-card {
+            background: rgba(17, 28, 45, 0.43);
+            color: #f5f7ff;
+            border: 1px solid rgba(225, 235, 255, 0.25);
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.16),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px) saturate(125%);
+            -webkit-backdrop-filter: blur(18px) saturate(125%);
+        }
+
+        body:not(.night).rainy .hero-card h2,
+        body:not(.night).rainy .hero-card .temperature,
+        body:not(.night).rainy .stat-card h3,
+        body:not(.night).rainy .advice-card h3,
+        body:not(.night).rainy .summary-card p:last-child,
+        body:not(.night).heavy-rain .hero-card h2,
+        body:not(.night).heavy-rain .hero-card .temperature,
+        body:not(.night).heavy-rain .stat-card h3,
+        body:not(.night).heavy-rain .advice-card h3,
+        body:not(.night).heavy-rain .summary-card p:last-child,
+        body:not(.night).stormy .hero-card h2,
+        body:not(.night).stormy .hero-card .temperature,
+        body:not(.night).stormy .stat-card h3,
+        body:not(.night).stormy .advice-card h3,
+        body:not(.night).stormy .summary-card p:last-child {
+            color: #f5f7ff;
+        }
+
+        body:not(.night).rainy .hero-card p,
+        body:not(.night).rainy .condition,
+        body:not(.night).rainy .stat-card p,
+        body:not(.night).heavy-rain .hero-card p,
+        body:not(.night).heavy-rain .condition,
+        body:not(.night).heavy-rain .stat-card p,
+        body:not(.night).stormy .hero-card p,
+        body:not(.night).stormy .condition,
+        body:not(.night).stormy .stat-card p {
+            color: rgba(232, 239, 251, 0.80);
+        }
+
+        body:not(.night).rainy .stat-icon,
+        body:not(.night).rainy .advice-icon,
+        body:not(.night).heavy-rain .stat-icon,
+        body:not(.night).heavy-rain .advice-icon,
+        body:not(.night).stormy .stat-icon,
+        body:not(.night).stormy .advice-icon {
+            background: rgba(235, 242, 255, 0.12);
+            border: 1px solid rgba(235, 242, 255, 0.16);
+        }
+
+
+
+        /* =====================================
+           DARK WEATHER THEME: HEADER + ALL CONTROLS
+           Sunny and cloudy intentionally keep the light UI.
+        ===================================== */
+
+        body.night .header h1,
+        body.rainy .header h1,
+        body.heavy-rain .header h1,
+        body.stormy .header h1,
+        body.foggy .header h1,
+        body.snowy .header h1 {
+            color: #f7f9ff !important;
+            text-shadow: 0 2px 18px rgba(0, 0, 0, 0.16);
+        }
+
+        body.night .subtitle,
+        body.rainy .subtitle,
+        body.heavy-rain .subtitle,
+        body.stormy .subtitle,
+        body.foggy .subtitle,
+        body.snowy .subtitle {
+            color: rgba(238, 243, 255, 0.82) !important;
+        }
+
+        body.night #cityInput,
+        body.rainy #cityInput,
+        body.heavy-rain #cityInput,
+        body.stormy #cityInput,
+        body.foggy #cityInput,
+        body.snowy #cityInput {
+            color: #f7f9ff !important;
+            background: rgba(18, 29, 47, 0.54) !important;
+            border: 1px solid rgba(226, 235, 255, 0.30) !important;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.06),
+                        0 12px 30px rgba(0,0,0,0.10) !important;
+            backdrop-filter: blur(16px) saturate(125%);
+            -webkit-backdrop-filter: blur(16px) saturate(125%);
+        }
+
+        body.night #cityInput::placeholder,
+        body.rainy #cityInput::placeholder,
+        body.heavy-rain #cityInput::placeholder,
+        body.stormy #cityInput::placeholder,
+        body.foggy #cityInput::placeholder,
+        body.snowy #cityInput::placeholder {
+            color: rgba(235, 241, 255, 0.66) !important;
+        }
+
+        body.night #searchButton,
+        body.rainy #searchButton,
+        body.heavy-rain #searchButton,
+        body.stormy #searchButton,
+        body.foggy #searchButton,
+        body.snowy #searchButton {
+            color: #f8faff !important;
+            background: rgba(91, 111, 224, 0.78) !important;
+            border: 1px solid rgba(221, 229, 255, 0.30) !important;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.16),
+                        inset 0 1px 0 rgba(255,255,255,0.16) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        body.night #searchButton:hover,
+        body.rainy #searchButton:hover,
+        body.heavy-rain #searchButton:hover,
+        body.stormy #searchButton:hover,
+        body.foggy #searchButton:hover,
+        body.snowy #searchButton:hover {
+            background: rgba(111, 130, 239, 0.92) !important;
+        }
+
+        body.night .sound-button,
+        body.rainy .sound-button,
+        body.heavy-rain .sound-button,
+        body.stormy .sound-button,
+        body.foggy .sound-button,
+        body.snowy .sound-button {
+            color: #f7f9ff !important;
+            background: rgba(19, 31, 50, 0.58) !important;
+            border: 1px solid rgba(226, 235, 255, 0.34) !important;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18),
+                        inset 0 1px 0 rgba(255,255,255,0.08) !important;
+            backdrop-filter: blur(16px) saturate(125%);
+            -webkit-backdrop-filter: blur(16px) saturate(125%);
+        }
+
+        body.night .sound-button:hover,
+        body.rainy .sound-button:hover,
+        body.heavy-rain .sound-button:hover,
+        body.stormy .sound-button:hover,
+        body.foggy .sound-button:hover,
+        body.snowy .sound-button:hover {
+            background: rgba(36, 51, 75, 0.78) !important;
+        }
+
+        body.night .empty-state h2,
+        body.rainy .empty-state h2,
+        body.heavy-rain .empty-state h2,
+        body.stormy .empty-state h2,
+        body.foggy .empty-state h2,
+        body.snowy .empty-state h2 {
+            color: #f4f7ff !important;
+        }
+
+        body.night .empty-state p,
+        body.rainy .empty-state p,
+        body.heavy-rain .empty-state p,
+        body.stormy .empty-state p,
+        body.foggy .empty-state p,
+        body.snowy .empty-state p {
+            color: rgba(230, 237, 251, 0.72) !important;
+        }
+
+        body.night .bottom-tools,
+        body.rainy .bottom-tools,
+        body.heavy-rain .bottom-tools,
+        body.stormy .bottom-tools,
+        body.foggy .bottom-tools,
+        body.snowy .bottom-tools {
+            border-top-color: rgba(226, 235, 255, 0.18) !important;
+        }
+
+        body.night .test-lab-trigger,
+        body.rainy .test-lab-trigger,
+        body.heavy-rain .test-lab-trigger,
+        body.stormy .test-lab-trigger,
+        body.foggy .test-lab-trigger,
+        body.snowy .test-lab-trigger,
+        body.night .connect-link,
+        body.rainy .connect-link,
+        body.heavy-rain .connect-link,
+        body.stormy .connect-link,
+        body.foggy .connect-link,
+        body.snowy .connect-link {
+            color: #f5f8ff !important;
+            background: rgba(19, 31, 50, 0.58) !important;
+            border: 1px solid rgba(226, 235, 255, 0.34) !important;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.16),
+                        inset 0 1px 0 rgba(255,255,255,0.08) !important;
+            backdrop-filter: blur(16px) saturate(125%);
+            -webkit-backdrop-filter: blur(16px) saturate(125%);
+        }
+
+        body.night .test-lab-trigger:hover,
+        body.rainy .test-lab-trigger:hover,
+        body.heavy-rain .test-lab-trigger:hover,
+        body.stormy .test-lab-trigger:hover,
+        body.foggy .test-lab-trigger:hover,
+        body.snowy .test-lab-trigger:hover,
+        body.night .connect-link:hover,
+        body.rainy .connect-link:hover,
+        body.heavy-rain .connect-link:hover,
+        body.stormy .connect-link:hover,
+        body.foggy .connect-link:hover,
+        body.snowy .connect-link:hover {
+            background: rgba(42, 57, 82, 0.78) !important;
+        }
+
+        body.night .connect-text,
+        body.rainy .connect-text,
+        body.heavy-rain .connect-text,
+        body.stormy .connect-text,
+        body.foggy .connect-text,
+        body.snowy .connect-text {
+            color: #f5f8ff !important;
+        }
+
+        /* Keep the Weather Test panel coordinated with dark weather modes. */
+        body.night .test-lab-panel,
+        body.rainy .test-lab-panel,
+        body.heavy-rain .test-lab-panel,
+        body.stormy .test-lab-panel,
+        body.foggy .test-lab-panel,
+        body.snowy .test-lab-panel {
+            color: #f5f8ff;
+            background: rgba(17, 28, 46, 0.88) !important;
+            border-color: rgba(226, 235, 255, 0.24) !important;
+            box-shadow: 0 24px 70px rgba(0, 0, 0, 0.38) !important;
+        }
+
+        body.night .test-lab-title,
+        body.rainy .test-lab-title,
+        body.heavy-rain .test-lab-title,
+        body.stormy .test-lab-title,
+        body.foggy .test-lab-title,
+        body.snowy .test-lab-title {
+            color: #f5f8ff !important;
+        }
+
+        body.night .test-lab-description,
+        body.rainy .test-lab-description,
+        body.heavy-rain .test-lab-description,
+        body.stormy .test-lab-description,
+        body.foggy .test-lab-description,
+        body.snowy .test-lab-description,
+        body.night .test-status,
+        body.rainy .test-status,
+        body.heavy-rain .test-status,
+        body.stormy .test-status,
+        body.foggy .test-status,
+        body.snowy .test-status {
+            color: rgba(230, 237, 251, 0.74) !important;
+        }
+
+        body.night .test-weather-button,
+        body.rainy .test-weather-button,
+        body.heavy-rain .test-weather-button,
+        body.stormy .test-weather-button,
+        body.foggy .test-weather-button,
+        body.snowy .test-weather-button {
+            color: #f5f8ff !important;
+            background: rgba(255, 255, 255, 0.07) !important;
+            border-color: rgba(226, 235, 255, 0.18) !important;
+        }
+
+        body.night .test-weather-button.active,
+        body.rainy .test-weather-button.active,
+        body.heavy-rain .test-weather-button.active,
+        body.stormy .test-weather-button.active,
+        body.foggy .test-weather-button.active,
+        body.snowy .test-weather-button.active {
+            background: rgba(102, 120, 223, 0.28) !important;
+            border-color: rgba(154, 168, 255, 0.72) !important;
+        }
+
+        body.night .test-weather-action,
+        body.rainy .test-weather-action,
+        body.heavy-rain .test-weather-action,
+        body.stormy .test-weather-action,
+        body.foggy .test-weather-action,
+        body.snowy .test-weather-action {
+            color: rgba(230, 237, 251, 0.64) !important;
+        }
+
+        body.night .test-lab-close,
+        body.rainy .test-lab-close,
+        body.heavy-rain .test-lab-close,
+        body.stormy .test-lab-close,
+        body.foggy .test-lab-close,
+        body.snowy .test-lab-close,
+        body.night .test-stop-button,
+        body.rainy .test-stop-button,
+        body.heavy-rain .test-stop-button,
+        body.stormy .test-stop-button,
+        body.foggy .test-stop-button,
+        body.snowy .test-stop-button {
+            color: #f5f8ff !important;
+            background: rgba(255, 255, 255, 0.12) !important;
+            border: 1px solid rgba(226, 235, 255, 0.20) !important;
+        }
+
+        body.night .test-lab-controls,
+        body.rainy .test-lab-controls,
+        body.heavy-rain .test-lab-controls,
+        body.stormy .test-lab-controls,
+        body.foggy .test-lab-controls,
+        body.snowy .test-lab-controls {
+            border-top-color: rgba(226, 235, 255, 0.18) !important;
+        }
+
     </style>
 
 </head>
@@ -1731,6 +2337,7 @@
         id="weatherEffects"
         aria-hidden="true"
     >
+        <div id="starfield" aria-hidden="true"></div>
 
         <div
             class="cloud cloud-one"
@@ -2156,10 +2763,10 @@
                     <span class="test-weather-action">Heavy rain + sound</span>
                 </button>
 
-                <button class="test-weather-button" type="button" data-test-theme="snowy" data-test-code="73">
-                    <span class="test-weather-icon">❄️</span>
-                    <span class="test-weather-name">Snow</span>
-                    <span class="test-weather-action">Snow animation + wind</span>
+                <button class="test-weather-button" type="button" data-test-theme="night" data-test-code="0">
+                    <span class="test-weather-icon">✨</span>
+                    <span class="test-weather-name">Night</span>
+                    <span class="test-weather-action">Starry sky + night ambience</span>
                 </button>
 
                 <button class="test-weather-button" type="button" data-test-theme="stormy" data-test-code="95">
@@ -2171,7 +2778,7 @@
 
             <div class="test-lab-controls">
                 <p id="testStatus" class="test-status">
-                    Select a weather mode to preview it.
+                    Select a weather mode or preview a clear night sky.
                 </p>
 
                 <button id="testStopButton" class="test-stop-button" type="button">
@@ -2327,6 +2934,7 @@
          * static/sounds/Heavy_rain.mp3
          * static/sounds/Soft_wind.mp3
          * static/sounds/thunderstorm.mp3
+         * static/sounds/Night.mp3 (natural cricket ambience for clear nights)
          */
 
         const weatherSounds = {
@@ -2334,7 +2942,8 @@
             rain: new Audio("./static/sounds/Rain.mp3"),
             heavyRain: new Audio("./static/sounds/Heavy_rain.mp3"),
             wind: new Audio("./static/sounds/Soft_wind.mp3"),
-            storm: new Audio("./static/sounds/thunderstorm.mp3")
+            storm: new Audio("./static/sounds/thunderstorm.mp3"),
+            night: new Audio("./static/sounds/Night.mp3")
         };
 
         Object.values(weatherSounds).forEach(function(audio) {
@@ -2349,7 +2958,6 @@
 
         let soundEnabled = false;
         let currentSound = null;
-
         function stopWeatherSound() {
             Object.values(weatherSounds).forEach(function(audio) {
                 audio.pause();
@@ -2363,6 +2971,10 @@
         }
 
         function getWeatherSound(theme, weatherCode) {
+            if (theme === "night") {
+                return weatherSounds.night;
+            }
+
             if (theme === "stormy") {
                 return weatherSounds.storm;
             }
@@ -2581,7 +3193,8 @@
         ===================================== */
 
         function getWeatherVisual(
-            weatherCode
+            weatherCode,
+            isDay = 1
         ) {
 
 
@@ -2591,7 +3204,7 @@
 
                 return {
 
-                    icon: "☀️",
+                    icon: Number(isDay) === 0 ? "🌙" : "☀️",
 
                     theme: "sunny"
 
@@ -2607,7 +3220,7 @@
 
                 return {
 
-                    icon: "☁️",
+                    icon: Number(isDay) === 0 ? "☁️🌙" : "☁️",
 
                     theme: "cloudy"
 
@@ -2725,6 +3338,8 @@
 
             document.body.classList.remove(
 
+                "night",
+                "heavy-rain",
                 "sunny",
 
                 "cloudy",
@@ -2818,31 +3433,41 @@
 
             /* Weather visual */
 
+            const isDay = Number(weather.is_day ?? 1);
+
             const visual =
                 getWeatherVisual(
-                    weather.weather_code
+                    weather.weather_code,
+                    isDay
                 );
 
             lastWeatherTheme =
-                visual.theme;
+                (isDay === 0 && Number(weather.weather_code) === 0)
+                    ? "night"
+                    : visual.theme;
 
             lastWeatherCode =
-                weather.weather_code;
+                Number(weather.weather_code);
 
 
             weatherIcon.textContent =
                 visual.icon;
 
 
-            /* Reset theme */
+            /* Reset previous weather and night classes first. */
 
             resetWeatherTheme();
 
 
-            /* Apply theme */
+            /* Apply the current weather and the searched city's local day/night state. */
 
-            document.body.classList.add(
-                visual.theme
+            document.body.classList.add(visual.theme);
+            document.body.classList.toggle("night", isDay === 0);
+
+            /* Mark heavy rain separately so it can use a darker atmosphere. */
+            document.body.classList.toggle(
+                "heavy-rain",
+                [65, 67, 82].includes(Number(weather.weather_code))
             );
 
 
@@ -2880,8 +3505,8 @@
             /* Weather sound */
 
             playWeatherSound(
-                visual.theme,
-                weather.weather_code
+                lastWeatherTheme,
+                lastWeatherCode
             );
 
 
@@ -2948,7 +3573,7 @@
                     const place = geoData.results[0];
 
                     const weatherResponse = await fetch(
-                        `https://api.open-meteo.com/v1/forecast?latitude=${place.latitude}&longitude=${place.longitude}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m&hourly=precipitation_probability&forecast_days=1&timezone=auto`
+                        `https://api.open-meteo.com/v1/forecast?latitude=${place.latitude}&longitude=${place.longitude}&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,is_day&hourly=precipitation_probability&forecast_days=1&timezone=auto`
                     );
 
                     if (!weatherResponse.ok) {
@@ -2958,7 +3583,10 @@
                     const weatherData = await weatherResponse.json();
                     const current = weatherData.current;
                     const weatherCode = current.weather_code;
-                    const rainProbability = weatherData.hourly?.precipitation_probability?.[0] ?? 0;
+                    const currentHourIndex = Array.isArray(weatherData.hourly?.time)
+                        ? Math.max(0, weatherData.hourly.time.indexOf(current.time))
+                        : 0;
+                    const rainProbability = weatherData.hourly?.precipitation_probability?.[currentHourIndex] ?? 0;
 
                     function getCondition(code) {
                         if (code === 0) return "Sunny";
@@ -2997,7 +3625,8 @@
                             rain_probability: rainProbability,
                             humidity: current.relative_humidity_2m,
                             wind_speed: current.wind_speed_10m,
-                            weather_code: weatherCode
+                            weather_code: weatherCode,
+                            is_day: Number(current.is_day ?? 1)
                         },
                         advice: { umbrella: umbrellaText },
                         summary: summaryText
@@ -3188,7 +3817,7 @@
                     place.latitude +
                     "&longitude=" +
                     place.longitude +
-                    "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m" +
+                    "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,is_day" +
                     "&hourly=precipitation_probability&forecast_days=1&timezone=auto";
 
                 const weatherResponse = await fetch(weatherURL);
@@ -3202,10 +3831,13 @@
 
                 const weatherCode = Number(current.weather_code);
 
+                const currentHourIndex = Array.isArray(weatherData.hourly && weatherData.hourly.time)
+                    ? Math.max(0, weatherData.hourly.time.indexOf(current.time))
+                    : 0;
                 const rainProbability = Number(
                     weatherData.hourly &&
                     weatherData.hourly.precipitation_probability
-                        ? weatherData.hourly.precipitation_probability[0] || 0
+                        ? weatherData.hourly.precipitation_probability[currentHourIndex] || 0
                         : 0
                 );
 
@@ -3274,7 +3906,8 @@
                         rain_probability: rainProbability,
                         humidity: current.relative_humidity_2m,
                         wind_speed: current.wind_speed_10m,
-                        weather_code: weatherCode
+                        weather_code: weatherCode,
+                        is_day: Number(current.is_day ?? 1)
                     },
                     advice: {
                         umbrella: umbrellaText
@@ -3378,6 +4011,8 @@
 
         function applyTestTheme(theme) {
             document.body.classList.remove(
+                "night",
+                "heavy-rain",
                 "sunny",
                 "cloudy",
                 "rainy",
@@ -3386,9 +4021,17 @@
                 "stormy"
             );
 
-            document.body.classList.add(
-                theme === "heavy-rain" ? "rainy" : theme
-            );
+            if (theme === "night") {
+                document.body.classList.add("night", "sunny");
+            } else {
+                document.body.classList.add(
+                    theme === "heavy-rain" ? "rainy" : theme
+                );
+            }
+
+            if (theme === "heavy-rain") {
+                document.body.classList.add("heavy-rain");
+            }
 
             rainContainer.style.display =
                 (
@@ -3403,6 +4046,11 @@
                 theme === "snowy"
                     ? "block"
                     : "none";
+
+            const starfield = document.getElementById("starfield");
+            if (starfield) {
+                starfield.style.opacity = theme === "night" ? "1" : "";
+            }
         }
 
         trigger.addEventListener("click", openLab);
@@ -3427,6 +4075,7 @@
                     cloudy: "Cloudy",
                     rainy: "Rain",
                     "heavy-rain": "Heavy Rain",
+                    night: "Night",
                     snowy: "Snow",
                     stormy: "Thunderstorm"
                 };
@@ -3475,6 +4124,7 @@
             updateSoundButton();
 
             document.body.classList.remove(
+                "night",
                 "sunny",
                 "cloudy",
                 "rainy",
@@ -3485,6 +4135,9 @@
 
             rainContainer.style.display = "none";
             snowContainer.style.display = "none";
+
+            const starfield = document.getElementById("starfield");
+            if (starfield) starfield.style.opacity = "";
 
             status.textContent =
                 "Test stopped. Select a weather mode to preview it again.";
